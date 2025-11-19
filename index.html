@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="start-screen" class="screen active">
+            <h1>Quiz Application</h1>
+            <p>Test your knowledge with our timed quiz!</p>
+            <p><strong>Time Limit:</strong> 10 minutes</p>
+            <p><strong>Questions:</strong> 10</p>
+            <button id="start-btn" class="btn primary">Start Quiz</button>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <div class="timer">
+                    <span>Time Remaining: </span>
+                    <span id="timer-display">10:00</span>
+                </div>
+                <div class="progress">
+                    Question <span id="current-question">1</span> of <span id="total-questions">10</span>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <h2 id="question-text"></h2>
+                <div id="options-container" class="options"></div>
+            </div>
+
+            <div class="quiz-controls">
+                <button id="next-btn" class="btn primary" disabled>Next Question</button>
+                <button id="submit-btn" class="btn success" style="display: none;">Submit Quiz</button>
+            </div>
+        </div>
+
+        <div id="results-screen" class="screen">
+            <h1>Quiz Results</h1>
+            <div class="score-summary">
+                <div class="score-circle">
+                    <span id="final-score">0</span>/<span id="total-score">10</span>
+                </div>
+                <p id="score-percentage"></p>
+                <p id="time-taken"></p>
+            </div>
+
+            <div class="results-details">
+                <h3>Question Review</h3>
+                <div id="question-review"></div>
+            </div>
+
+            <button id="restart-btn" class="btn primary">Take Quiz Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

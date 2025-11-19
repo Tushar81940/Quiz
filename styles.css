@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+
+/* Start Screen */
+#start-screen {
+    text-align: center;
+}
+
+#start-screen h1 {
+    margin-bottom: 20px;
+}
+
+#start-screen p {
+    margin-bottom: 10px;
+}
+
+/* Quiz Screen */
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.timer {
+    font-weight: bold;
+    color: red;
+}
+
+.question-container {
+    margin-bottom: 20px;
+}
+
+#question-text {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.options {
+    margin-bottom: 20px;
+}
+
+.option {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    cursor: pointer;
+}
+
+.option:hover {
+    background: #e9e9e9;
+}
+
+.option.selected {
+    background: #007cba;
+    color: white;
+}
+
+.quiz-controls {
+    text-align: center;
+}
+
+/* Results Screen */
+#results-screen {
+    text-align: center;
+}
+
+#results-screen h1 {
+    margin-bottom: 20px;
+}
+
+.score-summary {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+.score-circle {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.results-details {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.results-details h3 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.question-result {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+.question-result.correct {
+    background: #d4edda;
+}
+
+.question-result.incorrect {
+    background: #f8d7da;
+}
+
+.question-result h4 {
+    margin-bottom: 5px;
+}
+
+.question-result p {
+    margin: 3px 0;
+}
+
+.correct-answer {
+    color: green;
+    font-weight: bold;
+}
+
+.user-answer {
+    color: red;
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn.primary {
+    background: #007cba;
+    color: white;
+    border-color: #007cba;
+}
+
+.btn.success {
+    background: #28a745;
+    color: white;
+    border-color: #28a745;
+}
+
+.btn:hover:not(:disabled) {
+    opacity: 0.8;
+}
