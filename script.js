@@ -11,7 +11,7 @@ const quizData = [
   },
   {
     questionText: "Which data structure uses LIFO (Last In First Out)?",
-    options: ["Queue", "Stack", "Array", "Linked List"],
+    options: ["Queue", "Strings", "Array", "Linked List"],
     correctAnswer: 1,
   },
   {
